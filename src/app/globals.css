@@ -1,0 +1,62 @@
+/* 
+
+.flex{
+    display: flex;
+}
+
+.gridJs{
+ justify-content: space-between;
+}
+
+.ac{
+    align-items: center;
+}
+
+.textac{
+    text-align: center;
+}
+
+.pb10{
+    padding-bottom: 10px;
+}
+
+.pb20{
+    padding-bottom: 20px;
+}
+
+.gridJa{
+    justify-content: space-around;
+}
+
+.mb10{
+    margin-bottom: 10px;
+
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mb40{
+    margin-bottom: 40px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.banner{
+    height: 500px;
+    width: 100%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+.continer{
+    width: 1250px;
+    margin: auto;
+}
+.sliderBanner{
+    width: 100%;
+}

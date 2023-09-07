@@ -1,0 +1,21 @@
+.container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navGap{
+    gap: 20px;
+    align-items: center;
+}
+
+.searchIcon{
+    height: 15px;
+}
+
+.navText{
+    font-size: 12px;
+    color: grey;
+    text-decoration: none;
+}
