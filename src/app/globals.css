@@ -1,6 +1,4 @@
-body{
-    background-color: #fff;
-}
+/* 
 
 .flex{
     display: flex;
@@ -49,5 +47,16 @@ body{
 
 .banner{
     height: 500px;
+    width: 100%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+.continer{
+    width: 1250px;
+    margin: auto;
+}
+.sliderBanner{
     width: 100%;
 }
