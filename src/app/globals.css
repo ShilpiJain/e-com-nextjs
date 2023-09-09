@@ -60,3 +60,15 @@
 .sliderBanner{
     width: 100%;
 }
+.text-center{
+    text-align: center;
+}
+.padding-30{
+    padding: 30px 0;
+}
+.small-text{
+    font-size: 12px;
+}
+.flexBox{
+    display: flex;
+}
