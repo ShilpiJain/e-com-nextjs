@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from "./styles.css";
 import { TOP_HEADER } from "../../../constant/index.js"
-
+import styles from "./styles.module.css";
 
 const Topheader = () =>{
 
   return (
-    <div className='top-header'>
+    <div className={styles.topHeader}>
       <div className='continer'>
         <div className='text-center small-text'>
           {TOP_HEADER}

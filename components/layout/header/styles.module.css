@@ -1,10 +1,10 @@
-.mega-menu{
+.megaMenu{
     display: flex;
 }
-.mega-menu li{
+.megaMenu li{
     list-style: none;
 }
-.mega-menu li a{
+.megaMenu li a{
     text-decoration: none;
     padding: 10px;
     font-size: 16px;

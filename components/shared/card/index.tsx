@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 const IMAGE_BLOCK = [
   {
@@ -9,7 +9,7 @@ const IMAGE_BLOCK = [
     layout: "responsive",
     width: 100,
     height: 500,
-    loading: "lazy",
+    isLoading: "lazy",
     alt: "Picture of the author",
     key: 1,
     price:"₹ 4,962.00 INR",
@@ -21,7 +21,7 @@ const IMAGE_BLOCK = [
     layout: "responsive",
     width: 100,
     height: 500,
-    loading: "lazy",
+    isLoading: "lazy",
     alt: "Picture of the author",
     key: 2,
     price:"₹ 4,962.00 INR",
@@ -33,7 +33,7 @@ const IMAGE_BLOCK = [
     layout: "responsive",
     width: 100,
     height: 500,
-    loading: "lazy",
+    isLoading: "lazy",
     alt: "Picture of the author",
     key: 3,
     price:"₹ 4,962.00 INR",
@@ -45,7 +45,7 @@ const IMAGE_BLOCK = [
     layout: "responsive",
     width: 100,
     height: 500,
-    loading: "lazy",
+    isLoading: "lazy",
     alt: "Picture of the author",
     key: 4,
     price:"₹ 4,962.00 INR",
@@ -55,22 +55,17 @@ const IMAGE_BLOCK = [
 const Card = () => {
   return (
     <div className="continer">
-      <h1>Autonomous Coder Collection</h1>
-      <p>
-        Boost your coding efficiency with our Autonomous Coder collection. Our
-        products are engineered to enhance focus and optimize workflow.
-      </p>
       <div className="flexBox">
         {IMAGE_BLOCK.map(
-          ({ path, layout, width, height, loading, alt, key, title, price, rating }) => {
+          ({ path, layout, width, height, isLoading, alt, key, title, price, rating }) => {
             return (
-              <div className={`imageCard ${key}`} key={key}>
+              <div className={`${styles.imageCard} ${key}`} key={key}>
                 <Image
                   src={path}
                   layout={layout}
                   width={width}
                   height={height}
-                  loading={loading}
+                  loading={"lazy"}
                   alt={alt}
                 />
                 <h2>{title}</h2>

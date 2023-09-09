@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 import Link from "next/link";
 
 const MEGALink = [
@@ -26,7 +26,7 @@ export default function Header() {
       <div className="continer">
         <div className="flexBox">
           <label>logo</label>
-          <ul className="mega-menu">
+          <ul className={`${styles.megaMenu}`}>
             {MEGALink.map(({ label, path }) => {
               return (
                 <li key={""}>
