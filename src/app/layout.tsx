@@ -1,7 +1,7 @@
-import Copyright from "../../components/layout/copy-right";
-import Footer from "../../components/layout/footer";
-import Header from "../../components/layout/header";
-import Topheader from "../../components/layout/top-header";
+import Copyright from "../components/layout/copy-right";
+import Footer from "../components/layout/footer";
+import Header from "../components/layout/header";
+import Topheader from "../components/layout/top-header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 

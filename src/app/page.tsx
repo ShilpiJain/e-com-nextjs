@@ -1,12 +1,26 @@
 import Image from "next/image";
-import Copyright from "../../components/layout/copy-right";
-import Footer from "../../components/layout/footer";
-import Header from "../../components/layout/header";
-import Topheader from "../../components/layout/top-header";
-import Card from "../../components/shared/card";
-import Button from "../../components/shared/button";
+import Copyright from "../components/layout/copy-right";
+import Footer from "../components/layout/footer";
+import Header from "../components/layout/header";
+import Topheader from "../components/layout/top-header";
+import Card from "../components/shared/card";
+import Button from "../components/shared/button";
+import { useEffect } from "react";
+import axios from "axios";
 
 export default function Home() {
+  useEffect(()=>{
+    axios.post('/user', {
+      firstName: 'Fred',
+      lastName: 'Flintstone'
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  },[])
   return (
     <>
       <Image
