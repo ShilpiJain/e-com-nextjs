@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+let imageDomains =[
+    "images4.alphacoders.com",
+    "devhero.shop"
+]
+
+const nextConfig = {
+    images:{
+        domains: imageDomains
+    }
+}
 
 module.exports = nextConfig

@@ -1,0 +1,12 @@
+.megaMenu{
+    display: flex;
+}
+.megaMenu li{
+    list-style: none;
+}
+.megaMenu li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+}
